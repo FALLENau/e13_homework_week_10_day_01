@@ -26,23 +26,22 @@
 //
 // console.log(hello())
 
-var add = function(a,b){
-  return a + b
-}
-
-var sub = function(a,b){
-  return a - b
-}
-
-var div = function(a,b){
-  return a / b
-}
-
-
-var  wow = function(functionToInvoke){
-  console.log(functionToInvoke(2,5))
-}
-
-wow(add)
-wow(sub)
-wow(div)
+// var add = function(a,b){
+//   return a + b
+// }
+//
+// var sub = function(a,b){
+//   return a - b
+// }
+//
+// var div = function(a,b){
+//   return a / b
+// }
+//
+// var  wow = function(functionToInvoke){
+//   console.log(functionToInvoke(2,5))
+// }
+//
+// wow(add)
+// wow(sub)
+// wow(div)
