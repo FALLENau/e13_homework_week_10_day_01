@@ -67,24 +67,28 @@
 // suspectThree becuz it cannot see the var change within the allSuspects function.
 
 //
-// //ep5
-// var detective = {
-//   name : 'Ace Ventura',
-//   pet : 'monkey'
-// };
-//
-// var printName = function(detective) {
-//   return detective.name
-// };
-//
-// var detectiveInfo = function() {
-//   detective['name'] = 'Poirot'
-//   return printName(detective);
-// };
-//
-// console.log(detectiveInfo());
-// //output: Poirot
-//
+//ep5
+var detective = {
+  name : 'Ace Ventura',
+  pet : 'monkey'
+};
+
+var printName = function(detective) {
+  return detective.name
+};
+
+var detectiveInfo = function() {
+  detective['name'] = 'Poirot'
+  return printName(detective);
+};
+
+console.log(detectiveInfo());
+//output: Poirot
+//how?: var detective holds a name and a pet, becuz the function 'printName'
+// comes in the function of 'detectiveInfo' the detective name gets changed
+// before the console.log takes in detectiveInfo, which prints the name of the
+// var detective(i.e is now Poirot instead of Ace Ventura)
+
 //ep6
 var murderer = 'rick';
 
@@ -101,6 +105,15 @@ var outerFunction = function() {
 outerFunction();
 console.log('the murderer is ', murderer);
 //output: the murderer is  rick
+// the var murderer is made with the string 'rick', then a function called
+// outerFunction is created, which then turns the var murderer string into
+// 'merc'. Then anouther function is called within called innerFunction, which
+// then changes the var murderer to 'valerie' then exits the innerFunction
+// to the outerFunction, finially the the innerFunction is called within the
+// outerFunction function... once out side the function the and just before the
+// console.log() the outerFunction function is called... however; this doen't do
+// a thing becuz the function never returns anything! and thus the console.log
+// puts out a string "the murderer is " and the var string murderer 'rick'
 
 //ep7
 var person = "Morty"
