@@ -37,6 +37,10 @@
 // var div = function(a,b){
 //   return a / b
 // }
+
+// var multiply = function(a,b){
+//   return a * b
+// }
 //
 // var  wow = function(functionToInvoke){
 //   console.log(functionToInvoke(2,5))
@@ -45,3 +49,4 @@
 // wow(add)
 // wow(sub)
 // wow(div)
+// wow(multiply)
