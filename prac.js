@@ -11,6 +11,8 @@ function names(first_Name, last_Name){
 
 console.log(names(firstName, lastName))
 
+//
+
 function listNames(arrayOfNames){
   for(var name of arrayOfNames){
     console.log(name)
